@@ -10,22 +10,22 @@ const imageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setCli
     }
 
     return <>
-    <div className="overlay dismiss" onClick={handleClick}>
-        <img className="" src={clickedImg} alt="original size"/>
-        <span className="dismiss" onClick={handleClick}>X</span>
-        <div onClick={handleRotationRight}>
-            <div>
-                <RightArrow className="overlay-arrows_right"
-                width="50" height="50"/>
+        <div className="overlay dismiss" onClick={handleClick}>
+            <img className="" src={clickedImg} alt="original size"/>
+            <span className="dismiss" onClick={handleClick}>X</span>
+            <div onClick={handleRotationRight}>
+                <div>
+                    <RightArrow className="overlay-arrows_right"
+                                width="50" height="50"/>
+                </div>
+            </div>
+            <div onClick={handleRotationLeft}>
+                <div>
+                    <LeftArrow className="overlay-arrows_left"
+                               width="50" height="50"/>
+                </div>
             </div>
         </div>
-        <div onClick={handleRotationLeft}>
-            <div>
-                <LeftArrow className="overlay-arrows_left"
-                width="50" height="50"/>
-            </div>
-        </div>
-    </div>
     </>;
 };
 
