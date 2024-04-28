@@ -6,6 +6,8 @@ import { Container as MapDiv, NaverMap, Marker, useNavermaps } from 'react-naver
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import KakaoMap from "../components/kakaoMap";
+import Calendar from "../components/calendar";
+import ReactCalendar from "../components/calendar";
 
 function Main() {
     // state for image modal
@@ -117,6 +119,9 @@ function Main() {
                                 handleRotationLeft={handleRotationLeft}
                                 setClickedImg={setClickedImg}
                             />}
+                        </div>
+                        <div className='calendar-section'>
+                            <ReactCalendar></ReactCalendar>
                         </div>
                         <div className='location-section'>
                             <div className='location-section-text1'>
