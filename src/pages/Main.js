@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import data from '../assets/image_data.json';
-import pinIcon from '../assets/location-pin.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container as MapDiv, NaverMap, Marker, useNavermaps } from 'react-naver-maps';
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import KakaoMap from "../components/kakaoMap";
-import Calendar from "../components/calendar";
 import ReactCalendar from "../components/calendar";
 
 function Main() {
     // state for image modal
     const [clickedImg, setClickedImg] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(null);
-
-    const navermaps = useNavermaps()
 
     // const map = document.querySelector('.asd');
     //
@@ -129,9 +124,7 @@ function Main() {
                             </div>
                         </div>
                         <div className='location-map-section'>
-                            <MapDiv style={{width: '100%', height: '350px'}}>
-                                <KakaoMap></KakaoMap>
-                            </MapDiv>
+                            <KakaoMap></KakaoMap>
                             <div className='location-map-section-text'>마커를 클릭하시면 카카오맵으로 이동합니다.</div>
                         </div>
                         <div className='location-info-section'>

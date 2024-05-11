@@ -1,5 +1,4 @@
 import { Map, MapMarker, ZoomControl } from "react-kakao-maps-sdk"
-import { useState } from "react";
 
 function KakaoMap() {
     return (
