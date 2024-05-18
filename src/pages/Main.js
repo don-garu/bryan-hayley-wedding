@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import KakaoMap from "../components/kakaoMap";
-import ReactCalendar from "../components/calendar";
+import MyCalendar from "../components/calendar";
 
 function Main() {
     // state for image modal
@@ -116,7 +116,7 @@ function Main() {
                             />}
                         </div>
                         <div className='calendar-section'>
-                            <ReactCalendar></ReactCalendar>
+                            <MyCalendar></MyCalendar>
                         </div>
                         <div className='location-section'>
                             <div className='location-section-text1'>

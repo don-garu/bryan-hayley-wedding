@@ -1,100 +1,44 @@
+import React, { useState } from 'react';
 import Calendar from 'react-calendar';
-import styled from 'styled-components';
+import 'react-calendar/dist/Calendar.css';
+import '../MyCalendar.css';
 
-function ReactCalendar() {
-    return (
-        <CalendarContainer>
-            <Calendar calendarType='US' value={new Date("2024-09-29")} />
-        </CalendarContainer>
+const MyCalendar = () => {
+    const [date, setDate] = useState(new Date("2024-09-29"));
+    const today = new Date();
+
+    const CustomHeader = () => (
+        <div className="custom-header" onClick={(e) => e.stopPropagation()}>
+            <span>2024년 9월</span>
+        </div>
     );
-}
 
-export default ReactCalendar;
+    return (
+        <div>
+            <div className="calendar-container">
+                <Calendar
+                    onChange={() => setDate(date)}
+                    formatDay={(locale, date) =>
+                        date.toLocaleString('en', {day: 'numeric'})
+                    }
+                    value={date}
+                    calendarType="US"
+                    // formatMonthYear={() => ''}
+                    // formatShortWeekday={(locale, date) => date.toLocaleDateString(locale, {weekday: 'short'})}
+                    nextLabel={null}
+                    prevLabel={null}
+                    next2Label={null}
+                    prev2Label={null}
+                    navigationLabel={({date, label, view}) => <CustomHeader date={date}/>}
+                    showNeighboringMonth={false}
+                />
+            </div>
+            <div className="calendar-footer">
+                <p><br/> 두 사람의 결혼까지 {Math.ceil((date - today) / (1000 * 3600 * 24))} 일 남았습니다.</p>
+            </div>
+        </div>
 
-const CalendarContainer = styled.div`
-    /* ~~~ container styles ~~~ */
-    max-width: 600px;
-    margin: 20px auto auto;
-    background-color: #d4f7d4;
-    padding: 10px;
-    border-radius: 3px;
+    );
+};
 
-    /* ~~~ navigation styles ~~~ */
-
-    .react-calendar__navigation {
-        display: flex;
-
-        .react-calendar__navigation__label {
-            font-weight: bold;
-        }
-
-        .react-calendar__navigation__arrow {
-            flex-grow: 0.333;
-        }
-    }
-
-    /* ~~~ label styles ~~~ */
-
-    .react-calendar__month-view__weekdays {
-        text-align: center;
-    }
-
-    /* ~~~ button styles ~~~ */
-
-    button {
-        margin: 3px;
-        background-color: #FFFFFF;
-        border: 0;
-        border-radius: 3px;
-        color: white;
-        padding: 5px 0;
-
-        &:hover {
-            background-color: #556b55;
-        }
-
-        &:active {
-            background-color: #a5c1a5;
-        }
-    }
-
-    /* ~~~ day grid styles ~~~ */
-
-    .react-calendar__month-view__days {
-        display: grid !important;
-        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
-
-        .react-calendar__tile {
-            max-width: initial !important;
-        }
-
-        .react-calendar__tile--range {
-            box-shadow: 0 0 6px 2px black;
-        }
-    }
-
-    /* ~~~ neighboring month & weekend styles ~~~ */
-
-    .react-calendar__month-view__days__day--neighboringMonth {
-        opacity: 0.7;
-    }
-
-    .react-calendar__month-view__days__day--weekend {
-        color: #dfdfdf;
-    }
-
-    /* ~~~ other view styles ~~~ */
-
-    .react-calendar__year-view__months, .react-calendar__decade-view__years, .react-calendar__century-view__decades {
-        display: grid !important;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-
-        &.react-calendar__year-view__months {
-            grid-template-columns: 33.3% 33.3% 33.3%;
-        }
-
-        .react-calendar__tile {
-            max-width: initial !important;
-        }
-    }
-`;
+export default MyCalendar;
