@@ -4,13 +4,14 @@ import { useState } from "react";
 
 const ImageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setClickedImg}) => {
 
+    const [startX, setStartX] = useState(null);
+
     const handleClick = (e) => {
         if (e.target.classList.contains("dismiss")) {
             setClickedImg(null);
+            document.body.style.overflow = '';
         }
     }
-
-    const [startX, setStartX] = useState(null);
 
     const handleTouchStart = (e) => {
         setStartX(e.touches[0].clientX);
@@ -22,10 +23,14 @@ const ImageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setCli
         const currentX = e.touches[0].clientX;
         const diff = startX - currentX;
 
+        if (Math.abs(diff) < 10) return;
+
         if (diff > 50) {
             handleRotationRight();
+            setStartX(null); // 드래그가 끝나면 startX 초기화
         } else if (diff < -50) {
             handleRotationLeft();
+            setStartX(null); // 드래그가 끝나면 startX 초기화
         }
     };
 
@@ -33,11 +38,11 @@ const ImageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setCli
         setStartX(null);
     };
 
-    return <div className='overlay'
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}>
-        <img className="" src={clickedImg} alt="original size"/>
+    return <div className='overlay'>
+        <img className="" src={clickedImg} alt="original size"
+             onTouchStart={handleTouchStart}
+             onTouchMove={handleTouchMove}
+             onTouchEnd={handleTouchEnd}/>
         <span className="dismiss" onClick={handleClick}>X</span>
         <div onClick={handleRotationRight}>
             <div>

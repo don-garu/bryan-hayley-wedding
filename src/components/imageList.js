@@ -3,13 +3,14 @@ import '../App.css';
 import data from "../assets/image_data.json";
 import ImageModal from "./imageModal";
 
-const ImageList = ({images}) => {
+const ImageList = () => {
     const [clickedImg, setClickedImg] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(null);
 
     const handleClick = (item, index) => {
         setCurrentIndex(index);
         setClickedImg(item.link);
+        document.body.style.overflow = 'hidden';
     };
 
     const handleRotationRight = () => {
