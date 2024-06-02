@@ -1,56 +1,11 @@
-import React, { useState } from 'react';
-import data from '../assets/image_data.json';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-import ImageModal from '../components/imageModal';
 import KakaoMap from "../components/kakaoMap";
 import Calendar from "../components/calendar";
 import ImageList from "../components/imageList";
 
 function Main() {
-    // state for image modal
-    // const [clickedImg, setClickedImg] = useState(null);
-    // const [currentIndex, setCurrentIndex] = useState(null);
-    //
-    // const handleClick = (item, index) => {
-    //     setCurrentIndex(index);
-    //     setClickedImg(item.link);
-    // };
-    //
-    // const handleRotationRight = () => {
-    //     const totalLength = data.data.length;
-    //     if (currentIndex + 1 >= totalLength) {
-    //         setCurrentIndex(0);
-    //         const newUrl = data.data[0].link;
-    //         setClickedImg(newUrl);
-    //         return;
-    //     }
-    //     const newIndex = currentIndex + 1;
-    //     const newUrl = data.data.filter((item) => {
-    //         return data.data.indexOf(item) === newIndex;
-    //     });
-    //     const newItem = newUrl[0].link;
-    //     setClickedImg(newItem);
-    //     setCurrentIndex(newIndex);
-    // };
-    //
-    // const handleRotationLeft = () => {
-    //     const totalLength = data.data.length;
-    //     if (currentIndex === 0) {
-    //         setCurrentIndex(totalLength - 1);
-    //         const newUrl = data.data[totalLength - 1].link;
-    //         setClickedImg(newUrl);
-    //         return;
-    //     }
-    //     const newIndex = currentIndex - 1;
-    //     const newUrl = data.data.filter((item) => {
-    //         return data.data.indexOf(item) === newIndex;
-    //     });
-    //     const newItem = newUrl[0].link;
-    //     setClickedImg(newItem);
-    //     setCurrentIndex(newIndex);
-    // };
-
     return (
         <div className="">
             <div className='main container'>
