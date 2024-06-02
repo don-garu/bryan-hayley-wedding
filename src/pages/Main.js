@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import ImageModal from '../components/imageModal';
 import KakaoMap from "../components/kakaoMap";
-import MyCalendar from "../components/calendar";
+import Calendar from "../components/calendar";
 
 function Main() {
     // state for image modal
@@ -116,7 +116,7 @@ function Main() {
                             />}
                         </div>
                         <div className='calendar-section'>
-                            <MyCalendar></MyCalendar>
+                            <Calendar year={2024} month={8} highlightDay={29} title={'24년 9월'}></Calendar>
                         </div>
                         <div className='location-section'>
                             <div className='location-section-text1'>

@@ -1,44 +1,63 @@
-import React, { useState } from 'react';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
-import '../MyCalendar.css';
+import React from 'react';
+import '../Calendar.css';
 
-const MyCalendar = () => {
-    const [date, setDate] = useState(new Date("2024-09-29"));
-    const today = new Date();
+const Calendar = ({ year, month, highlightDay, title }) => {
+    const generateCalendar = (year, month) => {
+        const weeks = [];
+        const firstDay = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-    const CustomHeader = () => (
-        <div className="custom-header" onClick={(e) => e.stopPropagation()}>
-            <span>2024년 9월</span>
-        </div>
-    );
+        let day = 1;
+        for (let i = 0; i < 5; i++) {
+            const week = [];
+            for (let j = 0; j < 7; j++) {
+                if (i === 0 && j < firstDay) {
+                    week.push(null);
+                } else if (day > daysInMonth) {
+                    week.push(null);
+                } else {
+                    week.push(day);
+                    day++;
+                }
+            }
+            weeks.push(week);
+        }
+        return weeks;
+    };
+
+    const weeks = generateCalendar(year, month);
 
     return (
-        <div>
-            <div className="calendar-container">
-                <Calendar
-                    onChange={() => setDate(date)}
-                    formatDay={(locale, date) =>
-                        date.toLocaleString('en', {day: 'numeric'})
-                    }
-                    value={date}
-                    calendarType="US"
-                    // formatMonthYear={() => ''}
-                    // formatShortWeekday={(locale, date) => date.toLocaleDateString(locale, {weekday: 'short'})}
-                    nextLabel={null}
-                    prevLabel={null}
-                    next2Label={null}
-                    prev2Label={null}
-                    navigationLabel={({date, label, view}) => <CustomHeader date={date}/>}
-                    showNeighboringMonth={false}
-                />
-            </div>
-            <div className="calendar-footer">
-                <p><br/> 두 사람의 결혼까지 {Math.ceil((date - today) / (1000 * 3600 * 24))} 일 남았습니다.</p>
+        <div className="calendar-container">
+            <div className="calendar-title">{title}</div>
+            <div className="calendar">
+                <div className="calendar-header">
+                    <div>일</div>
+                    <div>월</div>
+                    <div>화</div>
+                    <div>수</div>
+                    <div>목</div>
+                    <div>금</div>
+                    <div>토</div>
+                </div>
+                {weeks.map((week, i) => (
+                    <div className="calendar-week" key={i}>
+                        {week.map((day, j) => (
+                            <div
+                                key={j}
+                                className={`calendar-day 
+                  ${day === highlightDay ? 'highlight' : ''}
+                  ${j === 0 || j === 6 ? 'weekend' : ''}
+                `}
+                            >
+                                {day}
+                            </div>
+                        ))}
+                    </div>
+                ))}
             </div>
         </div>
-
     );
 };
 
-export default MyCalendar;
+export default Calendar;

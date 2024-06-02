@@ -11,7 +11,7 @@ function KakaoMap() {
             }}
             style={{
                 // 지도의 크기
-                width: "100%",
+                width: "450px",
                 height: "350px",
             }}
             level={4} // 지도의 확대 레벨
