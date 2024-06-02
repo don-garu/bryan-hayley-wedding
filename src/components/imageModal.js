@@ -38,8 +38,8 @@ const ImageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setCli
         setStartX(null);
     };
 
-    return <div className='overlay'>
-        <img className="" src={clickedImg} alt="original size"
+    return <div className='overlay dismiss' onClick={handleClick}>
+        <img className="modal-image" src={clickedImg} alt="original size"
              onTouchStart={handleTouchStart}
              onTouchMove={handleTouchMove}
              onTouchEnd={handleTouchEnd}/>
