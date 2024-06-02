@@ -6,6 +6,7 @@ import Calendar from "../components/calendar";
 import ImageList from "../components/imageList";
 
 function Main() {
+    const direction = "pictures/direction.jpg"
     return (
         <div className="">
             <div className='main container'>
@@ -25,7 +26,12 @@ function Main() {
                                 <div className='mainsection-text-2'>
                                     황준익 <span className='text2-inner'> & </span> 최현진
                                 </div>
-                                <div className='mainsection-text-3'>2024. 09. 29 일요일 오전 11시<br/>상록 아트홀 (그랜드볼룸홀)</div>
+                                <div className='mainsection-text-3'>
+                                    2024. 09. 29 일요일 오전 11시
+                                </div>
+                                <div className='mainsection-text-4'>
+                                    상록 아트홀 (L층 그랜드볼룸)
+                                </div>
                             </div>
                         </div>
                         <div className='invitation-section'>
@@ -53,7 +59,7 @@ function Main() {
                             <ImageList></ImageList>
                         </div>
                         <div className='calendar-section'>
-                            <Calendar year={2024} month={8} highlightDay={29} title={'24년 9월'}></Calendar>
+                            <Calendar year={2024} month={8} highlightDay={29} title={'2024년 9월'}></Calendar>
                         </div>
                         <div className='location-section'>
                             <div className='location-section-text1'>
@@ -64,11 +70,17 @@ function Main() {
                             <KakaoMap></KakaoMap>
                             <div className='location-map-section-text'>마커를 클릭하시면 카카오맵으로 이동합니다.</div>
                         </div>
+                        <div className='location-direction-section'>
+                            <div className='location-section-text1'>
+                                약도
+                            </div>
+                            <img className="direction-image" src={direction} alt={''}/>
+                        </div>
                         <div className='location-info-section'>
                             <div className='location-info-section-text1'>상록아트홀</div>
                             <div className='location-info-section-text2'>
                                 서울특별시 강남구언주로 508<br/>
-                                지하 1층 그랜드볼룸 홀<br/>
+                                지하 1층 그랜드볼룸<br/>
                                 Tel. 02-564-5757
                             </div>
                         </div>

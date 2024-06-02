@@ -37,7 +37,7 @@
     margin-bottom: 10px;
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +55,7 @@
 
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
@@ -64,7 +64,7 @@
 }
 
 .text2-inner {
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 22px;
     margin: 0 5px;
     font-style: normal;
@@ -75,10 +75,20 @@
 .mainsection-text-3 {
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 18px;
     font-style: normal;
     font-weight: 550;
+    line-height: 25px;
+    letter-spacing: -0.18px;
+}
+.mainsection-text-4 {
+    color: #000;
+    text-align: center;
+    /*font-family: 'NanumMyeongjo', serif;*/
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 25px;
     letter-spacing: -0.18px;
 }
@@ -107,9 +117,9 @@
 
 .guest-info-section-text1 {
     /*margin-bottom: 32px;*/
-    color: #000;
+    color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -130,7 +140,7 @@
     margin-bottom: 32px;
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 800;
@@ -141,7 +151,7 @@
     margin-bottom: 32px;
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -161,7 +171,7 @@
     flex: 1 0 0; */
     width: 100%;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -169,7 +179,7 @@
 }
 
 .text3-inner {
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 16px;
     margin: 0 5px;
     font-style: normal;
@@ -189,7 +199,7 @@
 .gallery-section-text {
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 800;
@@ -208,7 +218,7 @@
 .location-section-text1 {
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 800;
@@ -221,12 +231,13 @@
 }
 
 .location-map-section-text {
+    padding-top: 10px;
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 12px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 350;
     line-height: 15px;
     text-transform: uppercase;
 }
@@ -245,7 +256,7 @@
     flex-direction: column;
     align-self: stretch;
     color: #000;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -257,7 +268,7 @@
     flex-direction: column;
     align-self: stretch;
     color: #000;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -279,7 +290,7 @@
     flex-direction: column;
     align-self: stretch;
     color: #000;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -302,7 +313,7 @@
     flex-direction: column;
     align-self: stretch;
     color: #000;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -312,7 +323,7 @@
 .location-how2-section {
     display: flex;
     width: 100%;
-    padding: 0 20px 60px 20px;
+    padding: 0 20px 20px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -324,7 +335,7 @@
     flex-direction: column;
     align-self: stretch;
     color: #000;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -336,7 +347,7 @@
     flex-direction: column;
     align-self: stretch;
     color: #000;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -358,7 +369,7 @@
 .congratulatory-section-text {
     color: #000;
     text-align: center;
-    font-family: 'NanumMyeongjo', serif;
+    /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
@@ -378,7 +389,7 @@
     border-color: white;
     color: #000;
     text-align: center;
-    font-family: 'NotoSansKR', serif;
+    /*font-family: 'NotoSansKR', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -401,15 +412,7 @@
 }
 
 .modal-image {
-    /*background-color: white;*/
-    /*padding: 20px;*/
-    /*border-radius: 8px;*/
-    /*position: relative;*/
     animation: fadeIn 0.5s ease; /* 페이드 인 애니메이션 */
-}
-
-.modal-image.leave {
-    animation: fadeOut 0.5s ease-out;
 }
 
 @keyframes fadeIn {
@@ -420,15 +423,6 @@
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
     }
 }
 
@@ -530,7 +524,7 @@
 
 .each-title {
     color: #000;
-    font-family: 'NotoSansKR', serif;
+    /*font-family: 'NotoSansKR', serif;*/
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -552,7 +546,7 @@
     border-radius: 3px;
     color: #000;
     text-align: center;
-    font-family: 'NotoSansKR', serif;
+    /*font-family: 'NotoSansKR', serif;*/
     font-size: 15px;
     font-style: normal;
 }
@@ -566,7 +560,7 @@
     border-radius: 30px;
     background: #000;
     color: #FFF;
-    font-family: 'NotoSansKR', serif;
+    /*font-family: 'NotoSansKR', serif;*/
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -585,7 +579,7 @@
     background: #F1F1F1;
     color: #000;
     text-align: center;
-    font-family: 'NotoSansKR', serif;
+    /*font-family: 'NotoSansKR', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -595,7 +589,7 @@
 
 .each-account-text {
     color: #000;
-    font-family: 'NotoSansKR', serif;
+    /*font-family: 'NotoSansKR', serif;*/
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -603,14 +597,26 @@
     text-transform: uppercase;
 }
 
+.location-direction-section {
+    display: flex;
+    padding: 40px 0 40px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direction-image {
+    width: 100%;
+}
+
 /* font */
 
-@font-face {
-    font-family: 'NanumMyeongjo';
-    src: local('NanumMyeongjo'), url(./fonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf) format('truetype');
+body {
+    font-family: "KyoboHand";
 }
 
 @font-face {
-    font-family: 'NotoSansKR';
-    src: local('NotoSansKR'), url(./fonts/Noto_Sans_KR/NotoSansKR-Regular.otf) format('truetype');
+    font-family: 'KyoboHand';
+    src: url('./fonts/KyoboHandwriting2023wsa.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
