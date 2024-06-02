@@ -85,6 +85,26 @@
   padding: 0 3px 6px 3px;
 }
 
+.guest-info-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.guest-info-section-text1 {
+  /*margin-bottom: 32px;*/
+  color: #000;
+  text-align: center;
+  font-family: NanumMyeongjo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 .invitation-section {
   display: flex;
   width: 100%;
@@ -178,11 +198,7 @@
   text-transform: uppercase;
 }
 .location-map-section {
-  display: flex;
-  flex-direction: column;
   z-index: 30;
-  justify-content: center;
-  align-items: center;
 }
 .location-map-section-text {
   color: #000;

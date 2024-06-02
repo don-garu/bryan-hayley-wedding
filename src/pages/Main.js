@@ -5,56 +5,51 @@ import '../App.css';
 import ImageModal from '../components/imageModal';
 import KakaoMap from "../components/kakaoMap";
 import Calendar from "../components/calendar";
+import ImageList from "../components/imageList";
 
 function Main() {
     // state for image modal
-    const [clickedImg, setClickedImg] = useState(null);
-    const [currentIndex, setCurrentIndex] = useState(null);
-
-    // const map = document.querySelector('.asd');
+    // const [clickedImg, setClickedImg] = useState(null);
+    // const [currentIndex, setCurrentIndex] = useState(null);
     //
-    // map.addEventListener('click', () => {
-    //     window.open('https://kko.to/LyUFsoozNk')
-    // });
-
-    const handleClick = (item, index) => {
-        setCurrentIndex(index);
-        setClickedImg(item.link);
-    };
-
-    const handleRotationRight = () => {
-        const totalLength = data.data.length;
-        if (currentIndex + 1 >= totalLength) {
-            setCurrentIndex(0);
-            const newUrl = data.data[0].link;
-            setClickedImg(newUrl);
-            return;
-        }
-        const newIndex = currentIndex + 1;
-        const newUrl = data.data.filter((item) => {
-            return data.data.indexOf(item) === newIndex;
-        });
-        const newItem = newUrl[0].link;
-        setClickedImg(newItem);
-        setCurrentIndex(newIndex);
-    };
-
-    const handleRotationLeft = () => {
-        const totalLength = data.data.length;
-        if (currentIndex === 0) {
-            setCurrentIndex(totalLength - 1);
-            const newUrl = data.data[totalLength - 1].link;
-            setClickedImg(newUrl);
-            return;
-        }
-        const newIndex = currentIndex - 1;
-        const newUrl = data.data.filter((item) => {
-            return data.data.indexOf(item) === newIndex;
-        });
-        const newItem = newUrl[0].link;
-        setClickedImg(newItem);
-        setCurrentIndex(newIndex);
-    };
+    // const handleClick = (item, index) => {
+    //     setCurrentIndex(index);
+    //     setClickedImg(item.link);
+    // };
+    //
+    // const handleRotationRight = () => {
+    //     const totalLength = data.data.length;
+    //     if (currentIndex + 1 >= totalLength) {
+    //         setCurrentIndex(0);
+    //         const newUrl = data.data[0].link;
+    //         setClickedImg(newUrl);
+    //         return;
+    //     }
+    //     const newIndex = currentIndex + 1;
+    //     const newUrl = data.data.filter((item) => {
+    //         return data.data.indexOf(item) === newIndex;
+    //     });
+    //     const newItem = newUrl[0].link;
+    //     setClickedImg(newItem);
+    //     setCurrentIndex(newIndex);
+    // };
+    //
+    // const handleRotationLeft = () => {
+    //     const totalLength = data.data.length;
+    //     if (currentIndex === 0) {
+    //         setCurrentIndex(totalLength - 1);
+    //         const newUrl = data.data[totalLength - 1].link;
+    //         setClickedImg(newUrl);
+    //         return;
+    //     }
+    //     const newIndex = currentIndex - 1;
+    //     const newUrl = data.data.filter((item) => {
+    //         return data.data.indexOf(item) === newIndex;
+    //     });
+    //     const newItem = newUrl[0].link;
+    //     setClickedImg(newItem);
+    //     setCurrentIndex(newIndex);
+    // };
 
     return (
         <div className="">
@@ -100,20 +95,7 @@ function Main() {
                             </div>
                         </div>
                         <div>
-                            <div className='gallery-image-list-wrapper row'>
-                                {data.data.map((item, index) => (
-                                    <div key={index} className='col-4'>
-                                        <img className='gallery-image' src={item.thumb_image_link} alt={item.text}
-                                             onClick={() => handleClick(item, index)}/>
-                                    </div>
-                                ))}
-                            </div>
-                            {clickedImg && <ImageModal
-                                clickedImg={clickedImg}
-                                handleRotationRight={handleRotationRight}
-                                handleRotationLeft={handleRotationLeft}
-                                setClickedImg={setClickedImg}
-                            />}
+                            <ImageList></ImageList>
                         </div>
                         <div className='calendar-section'>
                             <Calendar year={2024} month={8} highlightDay={29} title={'24년 9월'}></Calendar>
@@ -153,6 +135,13 @@ function Main() {
                                 <li>네비게이션 <b>서울상록회관</b> 또는 <b>서울시 강남구 언주로 508</b> 입력</li>
                                 <li>하객 주차 1시간 30분 무료, 초과 30분당 1,700원</li>
                             </ul>
+                        </div>
+                        <div className='guest-info-section'>
+                            <div className='guest-info-section-text1'>
+                                환경보호를 위해 축하 화환은<br/>
+                                정중히 사양하겠습니다.<br/>
+                                축하의 마음만 감사히 받겠습니다.<br/>
+                            </div>
                         </div>
                     </div>
 
