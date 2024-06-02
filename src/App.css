@@ -605,7 +605,12 @@
 }
 
 .direction-image {
-    width: 100%;
+    width: 550px;
+}
+
+.direction-image-2 {
+    padding: 20px 0 0 0;
+    width: 560px;
 }
 
 /* font */

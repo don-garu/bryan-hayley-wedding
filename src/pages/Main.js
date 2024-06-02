@@ -7,6 +7,7 @@ import ImageList from "../components/imageList";
 
 function Main() {
     const direction = "pictures/direction.jpg"
+    const directionInfo = "pictures/direction-info.jpg"
     return (
         <div className="">
             <div className='main container'>
@@ -75,33 +76,10 @@ function Main() {
                                 약도
                             </div>
                             <img className="direction-image" src={direction} alt={''}/>
-                        </div>
-                        <div className='location-info-section'>
-                            <div className='location-info-section-text1'>상록아트홀</div>
-                            <div className='location-info-section-text2'>
-                                서울특별시 강남구언주로 508<br/>
-                                지하 1층 그랜드볼룸<br/>
-                                Tel. 02-564-5757
+                            <img className="direction-image-2" src={directionInfo} alt={''}/>
+                            <div className='location-map-section-text'>
+                                하객 주차 1시간 30분 무료, 초과 30분당 1,700원
                             </div>
-                        </div>
-                        <div className='location-how-publictrans-section'>
-                            <div className='location-how-publictrans-section-text1'>지하철 및 셔틀버스 이용시</div>
-                            <ul className='location-how-publictrans-section-list'>
-                                <li>2호선, 수인분당선 선릉역 5번 출구, <b>도보 5분</b></li>
-                                <li><b>셔틀버스</b> : 선릉역 5번 출구에서 운행</li>
-                            </ul>
-                            <div className='location-how-publictrans-section-text1'>일반 버스 이용시</div>
-                            <ul className='location-how-publictrans-section-list'>
-                                <li>KT 강남지사 하차: 141(도봉산), 242(중랑, 신내역), 361(여의도)</li>
-                                <li>한국기술센터, 상록회관 하차: 146(상계동), 341(하남), 360(송파), 740(덕은동)</li>
-                            </ul>
-                        </div>
-                        <div className='location-how2-section'>
-                            <div className='location-how2-section-text1'>자동차 이용시</div>
-                            <ul className='location-how-publictrans-section-list'>
-                                <li>네비게이션 <b>서울상록회관</b> 또는 <b>서울시 강남구 언주로 508</b> 입력</li>
-                                <li>하객 주차 1시간 30분 무료, 초과 30분당 1,700원</li>
-                            </ul>
                         </div>
                         <div className='guest-info-section'>
                             <div className='guest-info-section-text1'>
