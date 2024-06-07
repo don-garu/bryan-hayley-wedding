@@ -59,7 +59,7 @@ function Main() {
                             <ImageList></ImageList>
                         </div>
                         <div className='calendar-section'>
-                            <Calendar year={2024} month={8} highlightDay={29} title={'2024년 9월'}></Calendar>
+                            <Calendar year={2024} month={8} highlightDay={29}></Calendar>
                         </div>
                         <div className='location-section'>
                             <div className='location-section-text1'>

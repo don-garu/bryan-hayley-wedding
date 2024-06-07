@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Calendar.css';
 
-const Calendar = ({ year, month, highlightDay, title }) => {
+const Calendar = ({year, month, highlightDay}) => {
     const generateCalendar = (year, month) => {
         const weeks = [];
         const firstDay = new Date(year, month, 1).getDay();
@@ -30,7 +30,10 @@ const Calendar = ({ year, month, highlightDay, title }) => {
     return (
         <div className="calendar-container">
             <div className="calendar">
-                <div className="calendar-title">{title}</div>
+                <div className="calendar-title">
+                    <div className="calendar-title-1">9월 29일</div>
+                    <div className="calendar-title-2">일. 오전 11:00</div>
+                </div>
                 <div className="calendar-header">
                     <div>일</div>
                     <div>월</div>
