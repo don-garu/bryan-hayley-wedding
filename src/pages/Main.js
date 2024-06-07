@@ -5,6 +5,7 @@ import KakaoMap from "../components/kakaoMap";
 import Calendar from "../components/calendar";
 import ImageList from "../components/imageList";
 import Account from "../components/account";
+import Countdown from "../components/countdown";
 
 function Main() {
     const direction = "pictures/direction.jpg"
@@ -39,11 +40,11 @@ function Main() {
                         <div className='invitation-section'>
                             <div className='invitation-section-text1'>INVITATION</div>
                             <div className='invitation-section-text2'>
-                                저희 두 사람이 사랑과 믿음으로<br/>
-                                한 가정을 이루게 되었습니다.<br/>
-                                바쁘시더라도 부디 오셔서<br/>
-                                저희의 앞날을 축복해 주시고<br/>
-                                격려해 주시면 감사하겠습니다.
+                                각자 서로 다른 길을 걸어온 저희가<br/>
+                                이제 부부의 연으로 한 길을 걸어가고자 합니다.<br/>
+                                평생을 서로의 곁에서 함께하기로 약속하는<br/>
+                                그 시작의 자리에 귀한 걸음 하시어 축복해주시면<br/>
+                                더없는 격려와 기쁨으로 간직하겠습니다.
                             </div>
                             <div className='invitation-section-text3'>
                                 황우일・정미옥<span className='text3-inner'>의 차남</span> 신랑 황준익
@@ -60,6 +61,9 @@ function Main() {
                         </div>
                         <div className='calendar-section'>
                             <Calendar year={2024} month={8} highlightDay={29}></Calendar>
+                            <Countdown></Countdown>
+                        </div>
+                        <div className='calendar-countdown-section'>
                         </div>
                         <div className='location-section'>
                             <div className='location-section-text1'>
@@ -80,9 +84,10 @@ function Main() {
                                 하객 주차 1시간 30분 무료, 초과 30분당 1,700원
                             </div>
                         </div>
-                        <Account></Account>
+                        <div className='congratulatory-section'>
+                            <Account></Account>
+                        </div>
                     </div>
-
                     <div className="col col-md-2 col-lg-3">
                     </div>
                 </div>
