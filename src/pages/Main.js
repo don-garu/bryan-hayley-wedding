@@ -4,6 +4,7 @@ import '../App.css';
 import KakaoMap from "../components/kakaoMap";
 import Calendar from "../components/calendar";
 import ImageList from "../components/imageList";
+import Account from "../components/account";
 
 function Main() {
     const direction = "pictures/direction.jpg"
@@ -19,7 +20,7 @@ function Main() {
                         <div className='mainsection'>
                             <div>
                                 <img
-                                    src="https://dave-khim-aws-bucket-public.s3.ap-northeast-2.amazonaws.com/test/love-tenderness-couple-s-crossed-hands.jpg"
+                                    src={"pictures/IMG_7131.jpg"}
                                     className='main-image' alt='t1'></img>
                             </div>
                             <div className='mainsection-text'>
@@ -88,6 +89,7 @@ function Main() {
                                 축하의 마음만 감사히 받겠습니다.<br/>
                             </div>
                         </div>
+                        <Account></Account>
                     </div>
 
                     <div className="col col-md-2 col-lg-3">
