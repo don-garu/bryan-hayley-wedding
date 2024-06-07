@@ -4,8 +4,6 @@
     align-items: center;
     margin: 0 auto;
     background: rgba(245, 238, 225, 0.8);
-    width: 60%;
-    min-width: 365px;
     padding: 0.5rem;
     border-radius: 1.5rem;
 }
