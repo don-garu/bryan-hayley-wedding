@@ -7,15 +7,12 @@ import ImageList from "../components/imageList";
 import Account from "../components/account";
 import Countdown from "../components/countdown";
 import Contact from "../components/contact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Main() {
     const direction = "pictures/direction.jpg"
     const directionInfo = "pictures/direction-info.jpg"
     return (
         <div className="">
-            <FontAwesomeIcon icon="fas fa-phone-square"/>
-
             <div className='main container'>
                 <div className="row justify-content-md-center">
                     <div className="col col-md-2 col-lg-3">
