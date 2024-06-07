@@ -2,57 +2,123 @@
     "data" :[
         {
             "text" : "1",
-            "main_image_link" : "pictures/1.JPG",
-            "thumb_image_link" : "pictures/1.JPG",
-            "link" : "pictures/1.JPG"
+            "link" : "pictures/1.jpeg"
         },
         {
             "text" : "2",
-            "main_image_link" : "pictures/2.JPG",
-            "thumb_image_link" : "pictures/2.JPG",
-            "link" : "pictures/2.JPG"
+            "link" : "pictures/2.jpeg"
         },
         {
             "text" : "3",
-            "main_image_link" : "pictures/3.JPG",
-            "thumb_image_link" : "pictures/3.JPG",
-            "link" : "pictures/3.JPG"
+            "link" : "pictures/3.jpeg"
         },
         {
             "text" : "4",
-            "main_image_link" : "pictures/4.JPG",
-            "thumb_image_link" : "pictures/4.JPG",
-            "link" : "pictures/4.JPG"
+            "link" : "pictures/4.jpeg"
         },
         {
             "text" : "5",
-            "main_image_link" : "pictures/5.JPG",
-            "thumb_image_link" : "pictures/5.JPG",
-            "link" : "pictures/5.JPG"
+            "link" : "pictures/5.jpeg"
         },
         {
             "text" : "6",
-            "main_image_link" : "pictures/6.JPG",
-            "thumb_image_link" : "pictures/6.JPG",
-            "link" : "pictures/6.JPG"
+            "link" : "pictures/6.jpeg"
         },
         {
             "text" : "7",
-            "main_image_link" : "pictures/7.JPG",
-            "thumb_image_link" : "pictures/7.JPG",
-            "link" : "pictures/7.JPG"
+            "link" : "pictures/7.jpeg"
         },
         {
             "text" : "8",
-            "main_image_link" : "pictures/8.JPG",
-            "thumb_image_link" : "pictures/8.JPG",
-            "link" : "pictures/8.JPG"
+            "link" : "pictures/8.jpeg"
         },
         {
             "text" : "9",
-            "main_image_link" : "pictures/9.JPG",
-            "thumb_image_link" : "pictures/9.JPG",
-            "link" : "pictures/9.JPG"
+            "link" : "pictures/9.jpeg"
+        },
+        {
+            "text" : "10",
+            "link" : "pictures/10.jpeg"
+        },
+        {
+            "text" : "11",
+            "link" : "pictures/11.jpeg"
+        },
+        {
+            "text" : "12",
+            "link" : "pictures/12.jpeg"
+        },
+        {
+            "text" : "13",
+            "link" : "pictures/13.jpeg"
+        },
+        {
+            "text" : "14",
+            "link" : "pictures/14.jpeg"
+        },
+        {
+            "text" : "15",
+            "link" : "pictures/15.jpeg"
+        },
+        {
+            "text" : "16",
+            "link" : "pictures/16.jpeg"
+        },
+        {
+            "text" : "17",
+            "link" : "pictures/17.jpeg"
+        },
+        {
+            "text" : "18",
+            "link" : "pictures/18.jpeg"
+        },
+        {
+            "text" : "19",
+            "link" : "pictures/19.jpeg"
+        },
+        {
+            "text" : "20",
+            "link" : "pictures/20.jpeg"
+        },
+        {
+            "text" : "21",
+            "link" : "pictures/21.jpeg"
+        },
+        {
+            "text" : "22",
+            "link" : "pictures/22.jpeg"
+        },
+        {
+            "text" : "23",
+            "link" : "pictures/23.jpeg"
+        },
+        {
+            "text" : "24",
+            "link" : "pictures/24.jpeg"
+        },
+        {
+            "text" : "25",
+            "link" : "pictures/25.jpeg"
+        },
+        {
+            "text" : "26",
+            "link" : "pictures/26.jpeg"
+        },
+        {
+            "text" : "27",
+            "link" : "pictures/27.jpeg"
+        },
+        {
+            "text" : "28",
+            "link" : "pictures/28.jpeg"
+        },
+        {
+            "text" : "29",
+            "link" : "pictures/29.jpeg"
+        },
+        {
+            "text" : "30",
+            "link" : "pictures/30.jpeg"
         }
     ] 
 }
