@@ -6,6 +6,7 @@ import ImageModal from "./imageModal";
 const ImageList = () => {
     const [clickedImg, setClickedImg] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(null);
+    const [showAll, setShowAll] = useState(false);
 
     const handleClick = (item, index) => {
         document.body.style.overflow = 'hidden';
@@ -35,15 +36,20 @@ const ImageList = () => {
         setCurrentIndex(nextIndex);
     };
 
+    const imagesToShow = showAll ? data.data : data.data.slice(0, 6);
+
     return (
         <div>
             <div className='gallery-image-list-wrapper row'>
-                {data.data.map((item, index) => (
+                {imagesToShow.map((item, index) => (
                     <div key={index} className='col-4'>
                         <img className='gallery-image' src={item.thumbnail} alt={item.text}
                              onClick={() => handleClick(item, index)}/>
                     </div>
                 ))}
+            </div>
+            <div className='gallery-section-expand' onClick={() => setShowAll(!showAll)}>
+                {showAll ? 'Show Less' : 'Show More'}
             </div>
             {clickedImg && <ImageModal
                 clickedImg={clickedImg}

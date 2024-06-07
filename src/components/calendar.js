@@ -29,8 +29,8 @@ const Calendar = ({ year, month, highlightDay, title }) => {
 
     return (
         <div className="calendar-container">
-            <div className="calendar-title">{title}</div>
             <div className="calendar">
+                <div className="calendar-title">{title}</div>
                 <div className="calendar-header">
                     <div>일</div>
                     <div>월</div>

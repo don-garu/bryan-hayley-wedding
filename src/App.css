@@ -191,6 +191,7 @@
     padding: 60px 0 36px 0;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -203,6 +204,19 @@
     font-weight: 800;
     line-height: 21px;
     text-transform: uppercase;
+}
+
+.gallery-section-expand {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    width: 20%;
+    border: 1px solid lightgray;
+    margin: 0 auto;
 }
 
 .location-section {

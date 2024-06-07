@@ -56,8 +56,6 @@ function Main() {
                             <div className='gallery-section-text'>
                                 GALLERY
                             </div>
-                        </div>
-                        <div>
                             <ImageList></ImageList>
                         </div>
                         <div className='calendar-section'>
