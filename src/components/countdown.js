@@ -33,7 +33,7 @@ const Countdown = () => {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [targetDate]);
+    }, [targetDate]) // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
         <div className='calendar-countdown-container'>
