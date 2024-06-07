@@ -219,6 +219,14 @@
     margin: 0 auto;
 }
 
+.calendar-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .location-section {
     display: flex;
     padding: 60px 0 36px 0;
