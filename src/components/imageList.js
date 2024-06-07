@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import '../App.css';
 import data from "../assets/image_data.json";
 import ImageModal from "./imageModal";
@@ -36,11 +36,20 @@ const ImageList = () => {
         setCurrentIndex(nextIndex);
     };
 
+    const handleShowMore = () => {
+        if (showAll) {
+            imageStart.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        setShowAll(!showAll)
+    }
+
     const imagesToShow = showAll ? data.data : data.data.slice(0, 6);
+
+    const imageStart = useRef()
 
     return (
         <div>
-            <div className='gallery-image-list-wrapper row'>
+            <div className='gallery-image-list-wrapper row' ref={imageStart}>
                 {imagesToShow.map((item, index) => (
                     <div key={index} className='col-4'>
                         <img className='gallery-image' src={item.thumbnail} alt={item.text}
@@ -48,7 +57,7 @@ const ImageList = () => {
                     </div>
                 ))}
             </div>
-            <div className='gallery-section-expand' onClick={() => setShowAll(!showAll)}>
+            <div className='gallery-section-expand' onClick={() => handleShowMore()}>
                 {showAll ? 'Show Less' : 'Show More'}
             </div>
             {clickedImg && <ImageModal
