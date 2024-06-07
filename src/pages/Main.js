@@ -80,13 +80,6 @@ function Main() {
                                 하객 주차 1시간 30분 무료, 초과 30분당 1,700원
                             </div>
                         </div>
-                        <div className='guest-info-section'>
-                            <div className='guest-info-section-text1'>
-                                환경보호를 위해 축하 화환은<br/>
-                                정중히 사양하겠습니다.<br/>
-                                축하의 마음만 감사히 받겠습니다.<br/>
-                            </div>
-                        </div>
                         <Account></Account>
                     </div>
 
