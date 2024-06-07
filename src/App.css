@@ -112,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    background: rgba(10, 255, 255, 0.15);
+    background: rgba(255, 180, 180, 0.2);
 }
 
 .invitation-section-text1 {
@@ -366,7 +366,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: rgba(10, 255, 255, 0.15);
+    background: rgba(255, 180, 180, 0.2);
     /*background: #F5EEE1;*/
 }
 
@@ -629,7 +629,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: rgba(10, 255, 255, 0.15);
+    background: rgba(255, 180, 180, 0.2);
     /*background: #F5EEE1;*/
 }
 
@@ -708,21 +708,25 @@
     padding: 8px;
 }
 
-a:link {
-    color : navy;
+.groom {
+    color: rgba(5, 40, 69, 0.8);
+}
+
+.groom > a {
+    color: rgba(5, 40, 69, 0.8);
     text-decoration: none;
 }
-a:visited {
-    color : navy;
-    text-decoration: none;
+
+.bride {
+    color: rgba(200, 100, 154, 0.8);
 }
-a:hover {
-    color : navy;
-    text-decoration: underline;
+
+.bride > a {
+    color: rgba(200, 100, 154, 0.8);
 }
-a:active {
-    color : navy;
-    text-decoration: none;
+
+.no-deco {
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* font */
