@@ -7,8 +7,8 @@ const accountInfo = ({title, accountData, setCopiedAccount}) => {
         resolve => setTimeout(resolve, ms)
     );
 
-    const copyAccountNumber = async (account_number) => {
-        setCopiedAccount(account_number);
+    const copyAccountNumber = async (accountNumber) => {
+        setCopiedAccount(accountNumber);
         await delay(2000);
         setCopiedAccount(null);
     };

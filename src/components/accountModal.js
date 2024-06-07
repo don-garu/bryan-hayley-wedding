@@ -7,13 +7,13 @@ const accountModal = ({clickedAccountData, setClickedAccountData, copiedAccount,
         if (e.target.classList.contains("dismiss")) {
             setClickedAccountData(null);
             setCopiedAccount(null);
+            document.body.style.overflow = '';
         }
     };
 
     return <>
         <div className="overlay dismiss" onClick={accountClick}>
             <div className="account-popup">
-                <div className="account-info-area"></div>
                 <AccountInfo
                     title={`${clickedAccountData.title} 계좌`}
                     accountData={clickedAccountData.data}

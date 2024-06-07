@@ -6,12 +6,16 @@ import Calendar from "../components/calendar";
 import ImageList from "../components/imageList";
 import Account from "../components/account";
 import Countdown from "../components/countdown";
+import Contact from "../components/contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Main() {
     const direction = "pictures/direction.jpg"
     const directionInfo = "pictures/direction-info.jpg"
     return (
         <div className="">
+            <FontAwesomeIcon icon="fas fa-phone-square"/>
+
             <div className='main container'>
                 <div className="row justify-content-md-center">
                     <div className="col col-md-2 col-lg-3">
@@ -53,6 +57,7 @@ function Main() {
                                 최원철・이영주<span className='text3-inner'>의 장녀</span> 신부 최현진
                             </div>
                         </div>
+                        <Contact></Contact>
                         <div className='gallery-section'>
                             <div className='gallery-section-text'>
                                 GALLERY
@@ -84,9 +89,7 @@ function Main() {
                                 하객 주차 1시간 30분 무료, 초과 30분당 1,700원
                             </div>
                         </div>
-                        <div className='congratulatory-section'>
-                            <Account></Account>
-                        </div>
+                        <Account></Account>
                     </div>
                     <div className="col col-md-2 col-lg-3">
                     </div>

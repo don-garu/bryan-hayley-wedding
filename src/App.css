@@ -112,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    background: #F5EEE1;
+    background: rgba(10, 255, 255, 0.15);
 }
 
 .invitation-section-text1 {
@@ -235,7 +235,7 @@
 
 .location-map-section-text {
     padding-top: 10px;
-    color: #000;
+    color: rgba(0, 0, 0, 0.5);
     text-align: center;
     /*font-family: 'NanumMyeongjo', serif;*/
     font-size: 12px;
@@ -360,12 +360,13 @@
 .congratulatory-section {
     display: flex;
     width: 100%;
-    padding: 40px 0 60px 0;
+    padding: 40px 0 100px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: #F5EEE1;
+    background: rgba(10, 255, 255, 0.15);
+    /*background: #F5EEE1;*/
 }
 
 .congratulatory-section-text {
@@ -431,7 +432,7 @@
 /* modal - image */
 .overlay img {
     display: block;
-    max-width: 80%;
+    max-width: 95%;
     max-height: 95%;
     margin: 60px auto;
     box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
@@ -619,10 +620,114 @@
     text-align: center;
 }
 
+.contact-section {
+    display: flex;
+    width: 100%;
+    padding: 0 0 60px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: rgba(10, 255, 255, 0.15);
+    /*background: #F5EEE1;*/
+}
+
+.contact-section-btn {
+    display: flex;
+    width: 330px;
+    padding: 12px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    border-color: white;
+    color: #000;
+    text-align: center;
+    /*font-family: 'NotoSansKR', serif;*/
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.contact-popup {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 8px;
+    background: #FFF;
+    width: 95%;
+    max-width: 450px;
+}
+
+.contact-popup-close {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #F1F1F1;
+    color: #000;
+    text-align: center;
+    /*font-family: 'NotoSansKR', serif;*/
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-info-block {
+    width: 50%;
+}
+
+.contact-info-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.contact-info-name {
+    width: 75%;
+    text-align: center;
+}
+
+.contact-info-body {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+a:link {
+    color : navy;
+    text-decoration: none;
+}
+a:visited {
+    color : navy;
+    text-decoration: none;
+}
+a:hover {
+    color : navy;
+    text-decoration: underline;
+}
+a:active {
+    color : navy;
+    text-decoration: none;
+}
+
 /* font */
 
 body {
-    font-family: "MangoDdobak";
+    font-family: "LaundryGothic", "serif";
 }
 
 @font-face {
@@ -638,4 +743,9 @@ body {
 @font-face {
     font-family: 'MangoDdobak';
     src: local('MangoDdobak'), url('./fonts/MangoBoard/MangoDdobak-R(ttf).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LaundryGothic';
+    src: local('LaundryGothic'), url('./fonts/LaundryGothic.ttf') format('truetype');
 }
