@@ -112,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    background: rgba(255, 180, 180, 0.2);
+    background: cornsilk;
 }
 
 .invitation-section-text1 {
@@ -366,7 +366,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: rgba(255, 180, 180, 0.2);
+    background: cornsilk;
     /*background: #F5EEE1;*/
 }
 
@@ -629,7 +629,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: rgba(255, 180, 180, 0.2);
+    background: cornsilk;
     /*background: #F5EEE1;*/
 }
 
