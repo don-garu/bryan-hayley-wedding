@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import data from "../assets/image_data.json";
 import Main from "./Main";
 import Init from "./Init";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import '../App.css';
 
 const Wrapper = () => {
     const [showMain, setShowMain] = useState(false);
@@ -32,10 +34,15 @@ const Wrapper = () => {
             });
     }, []);
 
-    return <>
-        {showMain && <Main/>}
-        {!showMain && <Init/>}
-    </>
+    return <TransitionGroup className="transition">
+        <CSSTransition
+            key={showMain ? "main" : "init"}
+            timeout={500}
+            classNames="fade"
+        >
+            {showMain ? <Main/> : <Init/>}
+        </CSSTransition>
+    </TransitionGroup>
 }
 
 export default Wrapper;

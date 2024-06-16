@@ -5,7 +5,7 @@ import '../App.css';
 
 function Init() {
     return (
-        <div className="main container">
+        // <div className="main container">
             <div className='row justify-content-md-center'>
                 <div className="col col-md-2 col-lg-3"/>
                 <div className="init-section">
@@ -13,7 +13,7 @@ function Init() {
                 </div>
                 <div className="col col-md-2 col-lg-3"/>
             </div>
-        </div>
+        // </div>
     );
 }
 
