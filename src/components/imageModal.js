@@ -5,6 +5,7 @@ import { useState } from "react";
 const ImageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setClickedImg}) => {
 
     const [startX, setStartX] = useState(null);
+     const [startY, setStartY] = useState(null);
 
     const handleClick = (e) => {
         if (e.target.classList.contains("dismiss")) {
@@ -15,6 +16,7 @@ const ImageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setCli
 
     const handleTouchStart = (e) => {
         setStartX(e.touches[0].clientX);
+        setStartY(e.touches[0].clientY);
     };
 
     const handleTouchMove = (e) => {
@@ -23,7 +25,10 @@ const ImageModal = ({clickedImg, handleRotationRight, handleRotationLeft, setCli
         const currentX = e.touches[0].clientX;
         const diff = startX - currentX;
 
-        if (Math.abs(diff) < 10) return;
+        const currentY = e.touches[0].clientY;
+        const diffY = startY - currentY;
+
+        if (Math.abs(diff) < 10 || Math.abs(diffY) > 50) return;
 
         if (diff > 50) {
             handleRotationRight();
