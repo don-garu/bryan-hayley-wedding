@@ -1,12 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
-import Init from "./pages/Init";
+import Wrapper from "./pages/Wrapper";
 
 const App = () => {
     return (
         <Routes>
-            <Route path="*" element={<Init/>}/>
-            <Route path="main" element={<Main/>}/>
+            <Route path="*" element={<Wrapper/>}/>
         </Routes>
     );
 };
