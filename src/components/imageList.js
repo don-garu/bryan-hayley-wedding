@@ -67,7 +67,7 @@ const ImageList = () => {
             <div className='gallery-image-list-wrapper row' ref={imageStart}>
                 {imagesToShow.map((item, index) => (
                     <div key={index} className='col-4'>
-                        <img className='gallery-image' src={item.thumbnail} alt={item.text}
+                        <img className='gallery-image' src={item.link} alt={item.text}
                              onClick={() => handleClick(item, index)}/>
                     </div>
                 ))}

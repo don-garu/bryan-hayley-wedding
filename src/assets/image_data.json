@@ -1,154 +1,112 @@
 {
   "data": [
     {
-      "text": "1",
-      "link": "resized/1.jpeg",
-      "thumbnail": "thumbnails/1.jpg"
+      "text": "a1",
+      "link": "pictures/a1.jpeg"
     },
     {
-      "text": "2",
-      "link": "resized/2.jpeg",
-      "thumbnail": "thumbnails/2.jpg"
+      "text": "a2",
+      "link": "pictures/a2.jpeg"
     },
     {
-      "text": "3",
-      "link": "resized/3.jpeg",
-      "thumbnail": "thumbnails/3.jpg"
+      "text": "a3",
+      "link": "pictures/a3.jpeg"
     },
     {
-      "text": "4",
-      "link": "resized/4.jpeg",
-      "thumbnail": "thumbnails/4.jpg"
+      "text": "b1",
+      "link": "pictures/b1.jpeg"
     },
     {
-      "text": "5",
-      "link": "resized/5.jpeg",
-      "thumbnail": "thumbnails/5.jpg"
+      "text": "b2",
+      "link": "pictures/b2.jpeg"
     },
     {
-      "text": "6",
-      "link": "resized/6.jpeg",
-      "thumbnail": "thumbnails/6.jpg"
+      "text": "b3",
+      "link": "pictures/b3.jpeg"
     },
     {
-      "text": "7",
-      "link": "resized/7.jpeg",
-      "thumbnail": "thumbnails/7.jpg"
+      "text": "c1",
+      "link": "pictures/c1.jpeg"
     },
     {
-      "text": "8",
-      "link": "resized/8.jpeg",
-      "thumbnail": "thumbnails/8.jpg"
+      "text": "c2",
+      "link": "pictures/c2.jpeg"
     },
     {
-      "text": "9",
-      "link": "resized/9.jpeg",
-      "thumbnail": "thumbnails/9.jpg"
+      "text": "c3",
+      "link": "pictures/c3.jpeg"
     },
     {
-      "text": "10",
-      "link": "resized/10.jpeg",
-      "thumbnail": "thumbnails/10.jpg"
+      "text": "d1",
+      "link": "pictures/d1.jpeg"
     },
     {
-      "text": "11",
-      "link": "resized/11.jpeg",
-      "thumbnail": "thumbnails/11.jpg"
+      "text": "d2",
+      "link": "pictures/a2.jpeg"
     },
     {
-      "text": "12",
-      "link": "resized/12.jpeg",
-      "thumbnail": "thumbnails/12.jpg"
+      "text": "d3",
+      "link": "pictures/d3.jpeg"
     },
     {
-      "text": "13",
-      "link": "resized/13.jpeg",
-      "thumbnail": "thumbnails/13.jpg"
+      "text": "e1",
+      "link": "pictures/e1.jpeg"
     },
     {
-      "text": "14",
-      "link": "resized/14.jpeg",
-      "thumbnail": "thumbnails/14.jpg"
+      "text": "e2",
+      "link": "pictures/e2.jpeg"
     },
     {
-      "text": "15",
-      "link": "resized/15.jpeg",
-      "thumbnail": "thumbnails/15.jpg"
+      "text": "e3",
+      "link": "pictures/e3.jpeg"
     },
     {
-      "text": "16",
-      "link": "resized/16.jpeg",
-      "thumbnail": "thumbnails/16.jpg"
+      "text": "f1",
+      "link": "pictures/f1.jpeg"
     },
     {
-      "text": "17",
-      "link": "resized/17.jpeg",
-      "thumbnail": "thumbnails/17.jpg"
+      "text": "f2",
+      "link": "pictures/f2.jpeg"
     },
     {
-      "text": "18",
-      "link": "resized/18.jpeg",
-      "thumbnail": "thumbnails/18.jpg"
+      "text": "f3",
+      "link": "pictures/f3.jpeg"
     },
     {
-      "text": "19",
-      "link": "resized/19.jpeg",
-      "thumbnail": "thumbnails/19.jpg"
+      "text": "g1",
+      "link": "pictures/g1.jpeg"
     },
     {
-      "text": "20",
-      "link": "resized/20.jpeg",
-      "thumbnail": "thumbnails/20.jpg"
+      "text": "g2",
+      "link": "pictures/g2.jpeg"
     },
     {
-      "text": "21",
-      "link": "resized/21.jpeg",
-      "thumbnail": "thumbnails/21.jpg"
+      "text": "g3",
+      "link": "pictures/g3.jpeg"
     },
     {
-      "text": "22",
-      "link": "resized/22.jpeg",
-      "thumbnail": "thumbnails/22.jpg"
+      "text": "h1",
+      "link": "pictures/h1.jpeg"
     },
     {
-      "text": "23",
-      "link": "resized/23.jpeg",
-      "thumbnail": "thumbnails/23.jpg"
+      "text": "h2",
+      "link": "pictures/h2.jpeg"
     },
     {
-      "text": "24",
-      "link": "resized/24.jpeg",
-      "thumbnail": "thumbnails/24.jpg"
+      "text": "h3",
+      "link": "pictures/h3.jpeg"
     },
     {
-      "text": "25",
-      "link": "resized/25.jpeg",
-      "thumbnail": "thumbnails/25.jpg"
+      "text": "i1",
+      "link": "pictures/i1.jpeg"
     },
     {
-      "text": "26",
-      "link": "resized/26.jpeg",
-      "thumbnail": "thumbnails/26.jpg"
+      "text": "i2",
+      "link": "pictures/i2.jpeg"
     },
     {
-      "text": "27",
-      "link": "resized/27.jpeg",
-      "thumbnail": "thumbnails/27.jpg"
-    },
-    {
-      "text": "28",
-      "link": "resized/28.jpeg",
-      "thumbnail": "thumbnails/28.jpg"
-    },
-    {
-      "text": "29",
-      "link": "resized/29.jpeg",
-      "thumbnail": "thumbnails/29.jpg"
-    },
-    {
-      "text": "30",
-      "link": "resized/30.jpeg",
-      "thumbnail": "thumbnails/30.jpg"
+      "text": "i3",
+      "link": "pictures/i3.jpeg"
     }
   ]
 }
