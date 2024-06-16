@@ -2,111 +2,138 @@
   "data": [
     {
       "text": "a1",
-      "link": "pictures/a1.jpeg"
+      "link": "pictures/a1.jpeg",
+      "thumbnail": "thumbnails/a1.jpeg"
     },
     {
       "text": "a2",
-      "link": "pictures/a2.jpeg"
+      "link": "pictures/a2.jpeg",
+      "thumbnail": "thumbnails/a2.jpeg"
     },
     {
       "text": "a3",
-      "link": "pictures/a3.jpeg"
+      "link": "pictures/a3.jpeg",
+      "thumbnail": "thumbnails/a3.jpeg"
     },
     {
       "text": "b1",
-      "link": "pictures/b1.jpeg"
+      "link": "pictures/b1.jpeg",
+      "thumbnail": "thumbnails/b1.jpeg"
     },
     {
       "text": "b2",
-      "link": "pictures/b2.jpeg"
+      "link": "pictures/b2.jpeg",
+      "thumbnail": "thumbnails/b2.jpeg"
     },
     {
       "text": "b3",
-      "link": "pictures/b3.jpeg"
+      "link": "pictures/b3.jpeg",
+      "thumbnail": "thumbnails/b3.jpeg"
     },
     {
       "text": "c1",
-      "link": "pictures/c1.jpeg"
+      "link": "pictures/c1.jpeg",
+      "thumbnail": "thumbnails/c1.jpeg"
     },
     {
       "text": "c2",
-      "link": "pictures/c2.jpeg"
+      "link": "pictures/c2.jpeg",
+      "thumbnail": "thumbnails/c2.jpeg"
     },
     {
       "text": "c3",
-      "link": "pictures/c3.jpeg"
+      "link": "pictures/c3.jpeg",
+      "thumbnail": "thumbnails/c3.jpeg"
     },
     {
       "text": "d1",
-      "link": "pictures/d1.jpeg"
+      "link": "pictures/d1.jpeg",
+      "thumbnail": "thumbnails/d1.jpeg"
     },
     {
       "text": "d2",
-      "link": "pictures/a2.jpeg"
+      "link": "pictures/a2.jpeg",
+      "thumbnail": "thumbnails/d2.jpeg"
     },
     {
       "text": "d3",
-      "link": "pictures/d3.jpeg"
+      "link": "pictures/d3.jpeg",
+      "thumbnail": "thumbnails/d3.jpeg"
     },
     {
       "text": "e1",
-      "link": "pictures/e1.jpeg"
+      "link": "pictures/e1.jpeg",
+      "thumbnail": "thumbnails/e1.jpeg"
     },
     {
       "text": "e2",
-      "link": "pictures/e2.jpeg"
+      "link": "pictures/e2.jpeg",
+      "thumbnail": "thumbnails/e2.jpeg"
     },
     {
       "text": "e3",
-      "link": "pictures/e3.jpeg"
+      "link": "pictures/e3.jpeg",
+      "thumbnail": "thumbnails/e3.jpeg"
     },
     {
       "text": "f1",
-      "link": "pictures/f1.jpeg"
+      "link": "pictures/f1.jpeg",
+      "thumbnail": "thumbnails/f1.jpeg"
     },
     {
       "text": "f2",
-      "link": "pictures/f2.jpeg"
+      "link": "pictures/f2.jpeg",
+      "thumbnail": "thumbnails/f2.jpeg"
     },
     {
       "text": "f3",
-      "link": "pictures/f3.jpeg"
+      "link": "pictures/f3.jpeg",
+      "thumbnail": "thumbnails/f3.jpeg"
     },
     {
       "text": "g1",
-      "link": "pictures/g1.jpeg"
+      "link": "pictures/g1.jpeg",
+      "thumbnail": "thumbnails/g1.jpeg"
     },
     {
       "text": "g2",
-      "link": "pictures/g2.jpeg"
+      "link": "pictures/g2.jpeg",
+      "thumbnail": "thumbnails/g2.jpeg"
     },
     {
       "text": "g3",
-      "link": "pictures/g3.jpeg"
+      "link": "pictures/g3.jpeg",
+      "thumbnail": "thumbnails/g3.jpeg"
     },
     {
       "text": "h1",
-      "link": "pictures/h1.jpeg"
+      "link": "pictures/h1.jpeg",
+      "thumbnail": "thumbnails/h1.jpeg"
     },
     {
       "text": "h2",
-      "link": "pictures/h2.jpeg"
+      "link": "pictures/h2.jpeg",
+      "thumbnail": "thumbnails/h2.jpeg"
     },
     {
       "text": "h3",
-      "link": "pictures/h3.jpeg"
+      "link": "pictures/h3.jpeg",
+      "thumbnail": "thumbnails/h3.jpeg"
     },
     {
       "text": "i1",
-      "link": "pictures/i1.jpeg"
+      "link": "pictures/i1.jpeg",
+      "thumbnail": "thumbnails/i1.jpeg"
     },
     {
       "text": "i2",
-      "link": "pictures/i2.jpeg"
+      "link": "pictures/i2.jpeg",
+      "thumbnail": "thumbnails/i2.jpeg"
     },
     {
       "text": "i3",
-      "link": "pictures/i3.jpeg"
+      "link": "pictures/i3.jpeg",
+      "thumbnail": "thumbnails/i3.jpeg"
     }
   ]
 }
