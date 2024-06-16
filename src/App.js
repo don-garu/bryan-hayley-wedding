@@ -1,14 +1,13 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
+import Init from "./pages/Init";
 
 const App = () => {
     return (
-        <div>
-            <Routes>
-                <Route path="*" element={<Main/>}/>
-            </Routes>
-        </div>
+        <Routes>
+            <Route path="*" element={<Init/>}/>
+            <Route path="main" element={<Main/>}/>
+        </Routes>
     );
 };
 

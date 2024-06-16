@@ -1,14 +1,17 @@
 .col-md {
+    /*height: 100%;*/
     padding-left: 0;
     padding-right: 0;
 }
 
 .main {
+    height: 100%;
     width: 100%;
     padding: 0;
 }
 
 .row {
+    height: 100%;
     margin-left: 0;
     margin-right: 0;
 }
@@ -21,6 +24,25 @@
 .main-image {
     width: 100%;
     height: auto;
+}
+
+.init-section {
+    background: cornsilk;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*width: 100%;*/
+    /*max-width: 450px;*/
+    height: 100%;
 }
 
 .mainsection-text {

@@ -1,4 +1,24 @@
 {
+  "all": [
+    "pictures/a1.jpeg",
+    "pictures/a2.jpeg",
+    "pictures/a3.jpeg",
+    "pictures/b1.jpeg",
+    "pictures/b2.jpeg",
+    "pictures/b3.jpeg",
+    "pictures/c1.jpeg",
+    "pictures/c2.jpeg",
+    "pictures/c3.jpeg",
+    "pictures/d1.jpeg",
+    "pictures/d2.jpeg",
+    "pictures/d3.jpeg",
+    "pictures/e1.jpeg",
+    "pictures/e2.jpeg",
+    "pictures/e3.jpeg",
+    "pictures/f1.jpeg",
+    "pictures/f2.jpeg",
+    "pictures/f3.jpeg"
+  ],
   "data": [
     {
       "text": "a1",

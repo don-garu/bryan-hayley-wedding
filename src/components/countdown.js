@@ -38,7 +38,7 @@ const Countdown = () => {
     return (
         <div className='calendar-countdown-container'>
             <div className='calendar-countdown-text'>
-                준익 ♥ 현진의 결혼까지<br/>
+                준익 <span className='calendar-countdown-text-inner'>♥</span> 현진의 결혼까지<br/>
                 {timeLeft.days}일 {timeLeft.hours}시간 {timeLeft.minutes}분 {timeLeft.seconds}초 남았어요
             </div>
         </div>

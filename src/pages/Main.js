@@ -39,7 +39,7 @@ function Main() {
                             </div>
                         </div>
                         <div className='invitation-section'>
-                            <div className='invitation-section-text1'>INVITATION</div>
+                            <div className='invitation-section-text1'>모시는 글</div>
                             <div className='invitation-section-text2'>
                                 각자 서로 다른 길을 걸어온 저희가<br/>
                                 이제 부부의 연으로 한 길을 걸어가고자 합니다.<br/>

@@ -1,23 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import '../App.css';
 import data from "../assets/image_data.json";
 import ImageModal from "./imageModal";
 
 const ImageList = () => {
-    const preloadImage = src => {
-        const img = new Image();
-        img.src = src;
-    };
-
-    const MyComponent = () => {
-        useEffect(() => {
-            data.data.map((imgSrc) =>
-                preloadImage(imgSrc.link)
-            )
-        }, []);
-
-        return <div></div>;
-    };
 
     const [clickedImg, setClickedImg] = useState(null);
     const [currentIndex, setCurrentIndex] = useState(null);
@@ -75,7 +61,6 @@ const ImageList = () => {
             <div className='gallery-section-expand' onClick={() => handleShowMore()}>
                 {showAll ? 'Show Less' : 'Show More'}
             </div>
-            <MyComponent/>
             {clickedImg && <ImageModal
                 clickedImg={clickedImg}
                 handleRotationRight={handleRotationRight}
