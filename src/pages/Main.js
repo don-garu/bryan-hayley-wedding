@@ -22,7 +22,7 @@ function Main() {
                         <div className='mainsection'>
                             <div>
                                 <img
-                                    src={"resized/IMG_7131.jpg"}
+                                    src={"pictures/main.jpeg"}
                                     className='main-image' alt='t1'></img>
                             </div>
                             <div className='mainsection-text'>
