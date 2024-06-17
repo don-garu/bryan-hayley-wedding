@@ -91,7 +91,7 @@
     margin: 0 5px;
     font-style: normal;
     font-weight: 600;
-
+    color: pink;
 }
 
 .mainsection-text-3 {
@@ -641,6 +641,10 @@
 
 .calendar-countdown-text {
     text-align: center;
+}
+
+.calendar-countdown-text-inner {
+    color: pink;
 }
 
 .contact-section {

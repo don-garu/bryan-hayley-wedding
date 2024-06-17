@@ -28,7 +28,7 @@ function Main() {
                             <div className='mainsection-text'>
                                 <div className='mainsection-text-1'>결혼식에 초대합니다</div>
                                 <div className='mainsection-text-2'>
-                                    황준익 <span className='text2-inner'> & </span> 최현진
+                                    황준익 <span className='text2-inner'> ♥ </span> 최현진
                                 </div>
                                 <div className='mainsection-text-3'>
                                     2024. 09. 29 일요일 오전 11시
