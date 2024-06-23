@@ -5,8 +5,8 @@ import Main from "./pages/Main";
 const App = () => {
     return (
         <Routes>
-            <Route path="*" element={<Wrapper/>}/>
             <Route path="/main" element={<Main/>}/>
+            <Route path="*" element={<Wrapper/>}/>
         </Routes>
     );
 };
