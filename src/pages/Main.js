@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import KakaoMap from "../components/kakaoMap";
@@ -7,10 +7,21 @@ import ImageList from "../components/imageList";
 import Account from "../components/account";
 import Countdown from "../components/countdown";
 import Contact from "../components/contact";
+import data from "../assets/image_data.json";
+import { loadImages } from "../utils/loadImages";
 
 function Main() {
     const direction = "pictures/direction.jpg"
     const directionInfo = "pictures/direction-info.jpg"
+
+    useEffect(() => {
+        loadImages(data.all)
+            .then(() => {})
+            .catch((error) => {
+                console.error('Error loading images:', error);
+            })
+    }, []);
+
     return (
         <div className="">
             <div className='main container'>
