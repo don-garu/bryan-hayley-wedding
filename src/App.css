@@ -218,7 +218,7 @@
     line-height: 21px;
     text-transform: uppercase;
     width: 20%;
-    max-width: 100px;
+    min-width: 100px;
     border: 1px solid lightgray;
     margin: 0 auto;
     border-radius: 0.3rem;
